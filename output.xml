@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1 (Python 3.12.6 on win32)" generated="2024-10-01T19:35:24.539193" rpa="false" schemaversion="5">
+<suite id="s1" name="Calculadora Tests" source="c:\wamp64\www\calculadora\robot-tests\calculadora_tests.robot">
+<test id="s1-t1" name="Testar Divisao Com Zero" line="36">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-10-01T19:35:25.068546" level="INFO">Opening browser 'chrome' to base url 'http://localhost/calculadora/src/index.php'.</msg>
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-10-01T19:35:25.068546" elapsed="3.119616"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-10-01T19:35:28.202159" level="INFO">Typing text '10' into text field 'name=num1'.</msg>
+<arg>name=num1</arg>
+<arg>10</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-01T19:35:28.200158" elapsed="0.260433"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-10-01T19:35:28.463199" level="INFO">Typing text '0' into text field 'name=num2'.</msg>
+<arg>name=num2</arg>
+<arg>0</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-01T19:35:28.462047" elapsed="0.148422"/>
+</kw>
+<kw name="Select From List By Value" owner="SeleniumLibrary">
+<msg time="2024-10-01T19:35:28.611521" level="INFO">Selecting options from selection list 'name=operation' by value divide.</msg>
+<arg>name=operation</arg>
+<arg>divide</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="PASS" start="2024-10-01T19:35:28.611521" elapsed="0.134510"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-10-01T19:35:28.748196" level="INFO">Clicking button 'xpath=//input[@type="submit"]'.</msg>
+<arg>xpath=//input[@type="submit"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-01T19:35:28.747101" elapsed="0.115563"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>xpath=//div[contains(@class, "error")]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2024-10-01T19:35:28.864660" elapsed="0.051592"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-10-01T19:35:28.961206" level="INFO">${erro} = Erro: Divisão por zero não é permitida.</msg>
+<var>${erro}</var>
+<arg>xpath=//div[contains(@class, "error")]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-01T19:35:28.917251" elapsed="0.043955"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${erro}</arg>
+<arg>Erro: Divisão por zero não é permitida.</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2024-10-01T19:35:28.961716" elapsed="0.001323"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-10-01T19:35:28.964052" elapsed="2.332959"/>
+</kw>
+<status status="PASS" start="2024-10-01T19:35:25.065545" elapsed="6.232672"/>
+</test>
+<status status="PASS" start="2024-10-01T19:35:24.549745" elapsed="6.750658"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Calculadora Tests">Calculadora Tests</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
