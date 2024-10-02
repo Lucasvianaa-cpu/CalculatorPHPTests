@@ -32,3 +32,6 @@
     
     PHP UNITY:
         . Rodar comando: vendor/bin/phpunit --coverage-html coverage_report tests/  
+
+# 4 Instalação SONAR na máquina
+    Seguir vídeo: https://www.youtube.com/watch?v=xs9fKiJ1Ts0
