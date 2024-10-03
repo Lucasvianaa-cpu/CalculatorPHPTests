@@ -31,7 +31,10 @@
         . Rodar comando: robot robot-tests/calculadora_tests.robot
     
     PHP UNITY:
-        . Rodar comando: vendor/bin/phpunit --coverage-html coverage_report tests/  
+        . Rodar comando: vendor/bin/phpunit --coverage-html coverage_report tests/ 
+
+    SELENIUM WEBDRIVER:
+        . Rodar comando: ./vendor/bin/phpunit tests/CalculadoraWebTest.php 
 
 # 4 Instalação SONAR na máquina
     Seguir vídeo: https://www.youtube.com/watch?v=xs9fKiJ1Ts0
