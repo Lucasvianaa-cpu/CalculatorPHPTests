@@ -6,10 +6,13 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
+    'Symfony\\Polyfill\\Mbstring\\' => array($vendorDir . '/symfony/polyfill-mbstring'),
     'Symfony\\Polyfill\\Ctype\\' => array($vendorDir . '/symfony/polyfill-ctype'),
     'Symfony\\Component\\Yaml\\' => array($vendorDir . '/symfony/yaml'),
+    'Symfony\\Component\\Process\\' => array($vendorDir . '/symfony/process'),
     'PhpParser\\' => array($vendorDir . '/nikic/php-parser/lib/PhpParser'),
     'Noodlehaus\\' => array($vendorDir . '/hassankhan/config/src'),
+    'Facebook\\WebDriver\\' => array($vendorDir . '/php-webdriver/webdriver/lib'),
     'Doctrine\\Instantiator\\' => array($vendorDir . '/doctrine/instantiator/src/Doctrine/Instantiator'),
     'DeepCopy\\' => array($vendorDir . '/myclabs/deep-copy/src/DeepCopy'),
     'Codedungeon\\PHPUnitPrettyResultPrinter\\' => array($vendorDir . '/codedungeon/phpunit-result-printer/src'),

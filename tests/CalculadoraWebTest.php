@@ -15,11 +15,9 @@ class CalculadoraWebTest extends TestCase
 
     public function setUp(): void
     {
-        $this->webDriver = RemoteWebDriver::create('http://localhost:51142', DesiredCapabilities::chrome());
-
-        $this->webDriver->get('http://localhost/calculadora/src/');
+        $this->webDriver = RemoteWebDriver::create('http://localhost:4444', DesiredCapabilities::chrome());
+        $this->webDriver->get('http://localhost/CalculatorPHPTests/src/');
     }
-
     public function tearDown(): void
     {
         $this->webDriver->quit();

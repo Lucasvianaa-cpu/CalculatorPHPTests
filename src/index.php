@@ -39,7 +39,7 @@
         </div>
 
         <?php
-        include 'Calculadora.php';
+        include './calculadora.php';
 
         if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $num1 = $_POST['num1'];

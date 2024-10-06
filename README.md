@@ -5,10 +5,13 @@
 
 # 2 Projeto
     . Realizar comando Composer Update
-    . Instalar RobotFramework e PHP Unity.
+    . Instalar RobotFramework, PHP Unity e Selenium Server (https://www.selenium.dev/downloads/).
 
 # 3 Comandos de Testes para execução
 
+    **Para execução do SELENIUM : RODAR COMANDO: java -jar /usr/local/bin/selenium-server-4.25.0.jar standalone
+    ** Start SONAR: sudo -u sonar /opt/sonarqube-10.7.0.96327/bin/linux-x86-64/sonar.sh start
+    
     . SONAR
         . Acessar localhost:9000
         . Configurar arquivo sonar-project.properties na raiz do projeto, se não conter, criar.
@@ -32,6 +35,7 @@
     
     PHP UNITY:
         . Rodar comando: vendor/bin/phpunit --coverage-html coverage_report tests/ 
+        ./vendor/bin/phpunit --coverage-clover coverage.xml
 
     SELENIUM WEBDRIVER:
         . Rodar comando: ./vendor/bin/phpunit tests/CalculadoraWebTest.php 

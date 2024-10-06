@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1728241004">
+  <project timestamp="1728241004">
+    <file name="/var/www/html/CalculatorPHPTests/src/calculadora.php">
+      <class name="DivisionByZeroException" namespace="global">
+        <metrics complexity="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="1" elements="2" coveredelements="2"/>
+      </class>
+      <class name="InvalidOperationException" namespace="global">
+        <metrics complexity="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="1" elements="2" coveredelements="2"/>
+      </class>
+      <line num="4" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="6" type="stmt" count="1"/>
+      <line num="12" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="14" type="stmt" count="1"/>
+      <line num="20" type="stmt" count="6"/>
+      <line num="23" type="stmt" count="6"/>
+      <line num="24" type="stmt" count="1"/>
+      <line num="25" type="stmt" count="1"/>
+      <line num="26" type="stmt" count="5"/>
+      <line num="27" type="stmt" count="1"/>
+      <line num="28" type="stmt" count="1"/>
+      <line num="29" type="stmt" count="4"/>
+      <line num="30" type="stmt" count="1"/>
+      <line num="31" type="stmt" count="1"/>
+      <line num="32" type="stmt" count="3"/>
+      <line num="33" type="stmt" count="2"/>
+      <line num="34" type="stmt" count="1"/>
+      <line num="36" type="stmt" count="1"/>
+      <line num="37" type="stmt" count="1"/>
+      <line num="39" type="stmt" count="1"/>
+      <line num="42" type="stmt" count="4"/>
+      <metrics loc="44" ncloc="44" classes="2" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="19" coveredstatements="19" elements="21" coveredelements="21"/>
+    </file>
+    <file name="/var/www/html/CalculatorPHPTests/src/index.php">
+      <line num="1" type="stmt" count="0"/>
+      <line num="2" type="stmt" count="0"/>
+      <line num="4" type="stmt" count="0"/>
+      <line num="5" type="stmt" count="0"/>
+      <line num="6" type="stmt" count="0"/>
+      <line num="7" type="stmt" count="0"/>
+      <line num="9" type="stmt" count="0"/>
+      <line num="10" type="stmt" count="0"/>
+      <line num="12" type="stmt" count="0"/>
+      <line num="13" type="stmt" count="0"/>
+      <line num="14" type="stmt" count="0"/>
+      <line num="16" type="stmt" count="0"/>
+      <line num="17" type="stmt" count="0"/>
+      <line num="18" type="stmt" count="0"/>
+      <line num="42" type="stmt" count="0"/>
+      <line num="44" type="stmt" count="0"/>
+      <line num="45" type="stmt" count="0"/>
+      <line num="46" type="stmt" count="0"/>
+      <line num="47" type="stmt" count="0"/>
+      <line num="50" type="stmt" count="0"/>
+      <line num="51" type="stmt" count="0"/>
+      <line num="52" type="stmt" count="0"/>
+      <line num="53" type="stmt" count="0"/>
+      <line num="57" type="stmt" count="0"/>
+      <line num="59" type="stmt" count="0"/>
+      <line num="60" type="stmt" count="0"/>
+      <line num="61" type="stmt" count="0"/>
+      <line num="62" type="stmt" count="0"/>
+      <line num="64" type="stmt" count="0"/>
+      <metrics loc="64" ncloc="64" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="29" coveredstatements="0" elements="29" coveredelements="0"/>
+    </file>
+    <metrics files="2" loc="108" ncloc="108" classes="2" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="48" coveredstatements="19" elements="50" coveredelements="21"/>
+  </project>
+</coverage>
