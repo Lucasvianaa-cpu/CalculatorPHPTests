@@ -7,7 +7,7 @@ ${CHROMEDRIVER_PATH}    /usr/local/bin/chromedriver
 
 *** Test Cases ***
 Testar Adicao Com Valores Positivos
-    [Documentation]    Testar a funcionalidade de adição com valores positivos na calculadora
+    [Documentation]   
     Open Browser    ${URL}    chrome    executable_path=${CHROMEDRIVER_PATH}
     Input Text    name=num1    80
     Input Text    name=num2    4
@@ -20,7 +20,7 @@ Testar Adicao Com Valores Positivos
     Close Browser
 
 Testar Subtracao Com Valores Positivos
-    [Documentation]    Testar a funcionalidade de subtração com valores positivos na calculadora
+    [Documentation]    
     Open Browser    ${URL}    chrome    executable_path=${CHROMEDRIVER_PATH}
     Input Text    name=num1    100
     Input Text    name=num2    50
@@ -33,14 +33,18 @@ Testar Subtracao Com Valores Positivos
     Close Browser
 
 Testar Divisao Com Zero
-    [Documentation]    Testar a funcionalidade de divisão por zero na calculadora
+    [Documentation]  
     Open Browser    ${URL}    chrome    executable_path=${CHROMEDRIVER_PATH}
     Input Text    name=num1    10
     Input Text    name=num2    0
     Select From List By Value    name=operation    divide
     Click Button    xpath=//button[text()='Calcular']
 
-    Wait Until Page Contains Element    xpath=//div[contains(@class, "error")]    timeout=30
-    ${erro}=    Get Text    xpath=//div[contains(@class, "error")]
+    Wait Until Page Contains Element    xpath=//h3[contains(@class, "error")]    timeout=30
+    
+    ${erro}=    Get Text    xpath=//h3[contains(@class, "error")]
+
     Should Contain    ${erro}    Erro: Divisão por zero não é permitida.
     Close Browser
+
+
