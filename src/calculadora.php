@@ -1,7 +1,7 @@
 <?php
 class DivisionByZeroException extends Exception
 {
-    public function __construct($message = "Erro: Divisão por zero")
+    public function __construct($message = "Erro: Divisão por zero não é permitida.")
     {
         parent::__construct($message);
     }
@@ -30,7 +30,7 @@ function calcular($num1, $num2, $operation)
             $result = $num1 * $num2;
             break;
         case 'divide':
-            if ($num2 === 0) {
+            if ($num2 == 0) {
                 throw new DivisionByZeroException();
             }
             $result = $num1 / $num2;

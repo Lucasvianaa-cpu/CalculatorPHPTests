@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora Simples em PHP</title>
-    
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 
@@ -38,6 +38,7 @@
             </div>
         </div>
 
+        <!-- Exibir resultado ou erro apenas após a submissão do formulário -->
         <?php
         include './calculadora.php';
 
@@ -48,9 +49,9 @@
 
             try {
                 $result = calcular($num1, $num2, $operation);
-                echo "<div class='mt-4'><h3 class='resultado'>Resultado: " . $result . "</h3></div>";
+                echo "<div class='mt-4'><h3 class='resultado'>Resultado: " . htmlspecialchars($result) . "</h3></div>";
             } catch (Exception $e) {
-                echo "<div class='mt-4'><h3 class='error text-danger'>" . $e->getMessage() . "</h3></div>";
+                echo "<div class='mt-4'><h3 class='error text-danger'>" . htmlspecialchars($e->getMessage()) . "</h3></div>";
             }
         }
         ?>
