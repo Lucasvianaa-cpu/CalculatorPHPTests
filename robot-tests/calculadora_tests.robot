@@ -8,7 +8,7 @@ ${CHROMEDRIVER_PATH}    /usr/local/bin/chromedriver
 *** Test Cases ***
 Testar Adicao Com Valores Positivos
     [Documentation]   
-    Open Browser    ${URL}    chrome    executable_path=${CHROMEDRIVER_PATH}
+    Open Browser    ${URL}    chrome    
     Input Text    name=num1    80
     Input Text    name=num2    4
     Select From List By Value    name=operation    add
@@ -21,7 +21,7 @@ Testar Adicao Com Valores Positivos
 
 Testar Subtracao Com Valores Positivos
     [Documentation]    
-    Open Browser    ${URL}    chrome    executable_path=${CHROMEDRIVER_PATH}
+    Open Browser    ${URL}    chrome    
     Input Text    name=num1    100
     Input Text    name=num2    50
     Select From List By Value    name=operation    subtract
@@ -34,7 +34,7 @@ Testar Subtracao Com Valores Positivos
 
 Testar Divisao Com Zero
     [Documentation]  
-    Open Browser    ${URL}    chrome    executable_path=${CHROMEDRIVER_PATH}
+    Open Browser    ${URL}    chrome   
     Input Text    name=num1    10
     Input Text    name=num2    0
     Select From List By Value    name=operation    divide
